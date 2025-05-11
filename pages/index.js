@@ -256,8 +256,8 @@ export default function Home() {
                     <div className="flex items-start gap-3">
                       <span className="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
                       <div>
-                      <p className="text-sm text-gray-600">'Chagua' &quot;'Lipa kwa M-Pesa'&quot;</p>
-                      <p className="text-sm text-gray-600">'Chagua' &quot;'Pay Bill'&quot;</p>
+                      <p className="text-sm text-gray-600">Chagua &quot;Lipa kwa M-Pesa&quot;</p>
+                      <p className="text-sm text-gray-600">Chagua &quot;Pay Bill&quot;</p>
                       </div>
                     </div>
                     
