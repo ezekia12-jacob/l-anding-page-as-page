@@ -50,7 +50,6 @@ export default function Home() {
   const [onyeshaMaelezoMalipo, setOnyeshaMaelezoMalipo] = useState(false);
   const [nambariImenakiliwa, setNambariImenakiliwa] = useState(false);
 
-  // Kuweka bei kwa muonekano mzuri
   const wekaBei = (price) => {
     return `TSh ${price}`;
   };
@@ -110,7 +109,7 @@ export default function Home() {
                     />
                   ) : (
                     <span className="text-5xl">
-                      {bidhaa.name.includes("Simu") ? "📱" : "💻"}
+                      {bidhaa.name.includes("Simu") ? "" : ""}
                     </span>
                   )}
                 </div>
@@ -205,7 +204,7 @@ export default function Home() {
           </section>
         )}
 
-        {/* Maelezo ya malipo ya M-Pesa - SEHEMU ILIOBORESHWAAAA */}
+        {/* Maelezo ya malipo ya M-Pesa */}
         {onyeshaMaelezoMalipo && bidhaaChaguliwa && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
             <div className="bg-white rounded-xl shadow-xl p-6 w-full max-w-md">
@@ -217,7 +216,6 @@ export default function Home() {
               </h2>
               
               <div className="space-y-4 mb-5">
-                {/* Kiasi cha malipo */}
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
                   <div className="flex justify-between items-center">
                     <div>
@@ -230,7 +228,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Hatua za malipo */}
                 <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                   <h3 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                     <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -243,15 +240,15 @@ export default function Home() {
                     <div className="flex items-start gap-3">
                       <span className="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
                       <div>
-                        <p className="font-medium, text-sm text-gray-600">Fungua M-Pesa yako</p>
-                        <p className="text-sm text-gray-600">Piga <strong className="text-blue-600">*150*00#</strong> kwenye simu yako</p>
+                        <p className="font-medium text-sm text-gray-600">Fungua M-Pesa yako</p>
+                        <p className="text-sm text-gray-600">Piga <strong className="text-blue-600">&ldquo;*150*00#&rdquo;</strong> kwenye simu yako</p>
                       </div>
                     </div>
                     
                     <div className="flex items-start gap-3">
                       <span className="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
                       <div>
-                        <p className="font-medium, text-sm text-gray-600">Chagua "Lipa kwa M-Pesa"</p>
+                        <p className="font-medium text-sm text-gray-600">Chagua &ldquo;Lipa kwa M-Pesa&rdquo;</p>
                         <p className="text-sm text-gray-600">Bonyeza <strong className="text-blue-600">4</strong> kwa huduma za malipo</p>
                       </div>
                     </div>
@@ -259,15 +256,15 @@ export default function Home() {
                     <div className="flex items-start gap-3">
                       <span className="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
                       <div>
-                        <p className="font-medium, text-sm text-gray-600">Chagua "Pay Bill"</p>
-                        <p className="text-sm text-gray-600">Bonyeza <strong className="text-blue-600">1</strong> kwa Pay Bill</p>
+                      <p className="text-sm text-gray-600">'Chagua' &quot;'Lipa kwa M-Pesa'&quot;</p>
+                      <p className="text-sm text-gray-600">'Chagua' &quot;'Pay Bill'&quot;</p>
                       </div>
                     </div>
                     
                     <div className="flex items-start gap-3">
                       <span className="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">4</span>
                       <div>
-                        <p className="font-medium, text-sm text-gray-600">Weka nambari ya kampuni</p>
+                        <p className="font-medium text-sm text-gray-600">Weka nambari ya kampuni</p>
                         <div className="flex items-center gap-2 mt-1">
                           <span className="bg-gray-200 px-2 py-1 rounded font-mono">000000</span>
                           <button 
@@ -283,9 +280,9 @@ export default function Home() {
                     <div className="flex items-start gap-3">
                       <span className="bg-blue-100 text-blue-800 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">5</span>
                       <div>
-                        <p className="font-medium, text-sm text-gray-600">Weka jina la kumbukumbu</p>
+                        <p className="font-medium text-sm text-gray-600">Weka jina la kumbukumbu</p>
                         <div className="flex items-center gap-2 mt-1">
-                          <span className="bg-gray-200 px-2 py-1 rounded font-mono, text-sm text-gray-600">DukaLetu</span>
+                          <span className="bg-gray-200 px-2 py-1 rounded font-mono text-sm text-gray-600">DukaLetu</span>
                           <button 
                             onClick={() => nakiliNambari("DukaLetu")}
                             className="text-blue-600 text-sm flex items-center gap-1"
@@ -298,7 +295,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Maelezo ya m-pesa */}
                 <div className="bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
                   <h3 className="font-bold text-gray-800 mb-2 flex items-center gap-2">
                     <svg className="w-5 h-5 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -336,13 +332,12 @@ export default function Home() {
                     
                     <div>
                       <p className="text-sm text-gray-600">Jina la Kupokea:</p>
-                      <p className="font-semibold, text-sm text-gray-600">ROBERT SHIJA BUZWAGALA</p>
+                      <p className="font-semibold text-sm text-gray-600">ROBERT SHIJA BUZWAGALA</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Ujumbe wa uhakiki */}
               <div className="bg-green-50 p-4 rounded-lg mb-4 border border-green-200">
                 <div className="flex items-start gap-2">
                   <svg className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -355,7 +350,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Vifungo vya matendo */}
               <div className="flex flex-col sm:flex-row gap-3">
                 <button 
                   onClick={() => setOnyeshaMaelezoMalipo(false)}
